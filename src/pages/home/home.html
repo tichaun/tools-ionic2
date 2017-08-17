@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>工具911</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  <ion-slides class="sideimg"  autoplay="2000" initialSlide="0"
+                        pager="true"
+                        loop="true"
+                        speed="300">
+    <ion-slide>
+      <img src="assets/img/01.jpg" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/02.jpg" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/03.jpg" alt="">
+    </ion-slide>
+  </ion-slides>
+  <ion-grid>
+    <ion-row >
+      <ion-col (click)="express()">
+         <ion-icon class="imgiocn" name="cube"></ion-icon><br>
+        <span class="title">快递查询</span>
+      </ion-col>
+      <ion-col (click)="Journalism()">
+        <ion-icon class="imgiocn" name="paper"></ion-icon><br>
+        <span class="title">今日头条</span>
+      </ion-col>
+    </ion-row>
+    <ion-row >
+        <ion-col (click)="caipu()">
+          <ion-icon class="imgiocn" name="print"></ion-icon><br>
+          <span class="title">菜谱</span>
+        </ion-col>
+        <ion-col >
+         
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-content>
